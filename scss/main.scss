@@ -1,0 +1,315 @@
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin phone {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+body {
+  font-family: "Mulish";
+  font-size: 0.875rem;
+  .btn-default {
+    border-radius: 16px;
+    padding: 15px;
+  }
+}
+
+/* ======== Sign =========== */
+
+.sign {
+  height: 100vh;
+
+  .info-sign {
+    display: none;
+    @include tablet() {
+      background: linear-gradient(
+          0deg,
+          rgba(43, 21, 107, 0.8),
+          rgba(43, 21, 107, 0.8)
+        ),
+        url(/assets/img/iron.png);
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .content {
+        width: 80%;
+
+        color: white;
+        .logo-img-login {
+          height: 150px;
+        }
+
+        .logo-img-signup {
+          height: 100px;
+          margin-left: 0;
+        }
+
+        h1 {
+          font-weight: 600;
+        }
+        p {
+          font-size: 17px;
+          line-height: 2.5rem;
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        .order-status {
+          .older-list-status {
+            counter-increment: item;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+
+            .active {
+              color: $white;
+            }
+
+            .active::before {
+              background-color: $white;
+              color: $purple;
+            }
+
+            p {
+              margin-bottom: 0;
+            }
+            p::before {
+              margin-right: 10px;
+              content: counter(item);
+              border: 2px solid #ffffff;
+              border-radius: 100%;
+              color: white;
+              width: 45px;
+              text-align: center;
+              display: inline-block;
+            }
+
+            .line {
+              height: 20px;
+              border-left: 2px solid #ffffff;
+              z-index: 1;
+              position: absolute;
+              margin: 0 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*-----Form sign up or sing in---*/
+
+  .form-sign {
+    margin: auto;
+    max-width: 100%;
+
+    .logo-mobile {
+      @include tablet() {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .sign-p {
+      color: $gray-600;
+      font-size: 18px;
+
+      @include phone() {
+        display: none;
+      }
+    }
+
+    form {
+      .form-control {
+        font-size: 16px;
+        color: $gray-600;
+        border-radius: 16px;
+        padding: 30px;
+      }
+
+      .form-label {
+        font-size: 16px;
+      }
+
+      input[type="checkbox"] {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+      }
+
+      .pass_show {
+        font-size: 20px;
+        color: $gray-600;
+        float: right;
+        margin-right: 13px;
+        margin-top: -40px;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .btn-login {
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+      color: $gray-600;
+      border-radius: 16px;
+      margin-left: 25px;
+      margin-bottom: 10px;
+      width: 150px;
+
+      img {
+        height: 20px;
+      }
+
+      &:hover {
+        background-color: $gray-200;
+      }
+
+      @include desktop() {
+      }
+
+      @include phone() {
+        width: 50px;
+        margin-left: 10px;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* ===== Sign end =========*/
+
+/* ====== Landing Page ========*/
+
+header {
+  .navbar {
+    .navbar-toggler {
+      border: none;
+      color: $black;
+      padding: 0 1rem 0 1rem;
+      font-size: 2rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .nav-link {
+      font-size: 16px;
+    }
+
+    .btn-sign-up {
+      width: 7rem;
+    }
+  }
+
+  .mobile-nav {
+    .search {
+      padding-bottom: 0px;
+      input {
+        width: 90%;
+        margin: auto;
+        font-size: 16px;
+        padding-left: 50px;
+      }
+
+      .mobile-search-icon {
+        font-size: 20px;
+        color: $gray-600;
+        margin-left: 40px;
+        margin-top: -30px;
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 22;
+      }
+    }
+
+    .hr {
+      border-top: 0.5px solid $gray-200;
+      width: 100%;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .location-dropdown {
+      .show {
+        text-align: center;
+        padding: 0;
+        border: none;
+      }
+    }
+
+    @media (min-width: 805px) {
+      display: none;
+    }
+  }
+}
