@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icon-->
+    <!--Icon-->
     <!--style-->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <!--style-->
@@ -10,7 +12,7 @@
   </head>
 
   <body>
-    <!-- ==========Header==========-->
+    <!-- Header-->
     <header id="header" class="fixed-top bg-white">
       <div class="container">
         <nav class="navbar navbar-expand-md navbar-light container">
@@ -94,12 +96,9 @@
                 color="gray"
               ></span>
             </a>
-            <a
-              class="btn btn-primary btn-sign-up"
-              href="./signup.html"
-              role="button"
-              >Sign Up</a
-            >
+            <a class="user-profile" href="./signup.html" role="button">
+              <img src="./assets/img/user.jpeg" alt="user profile" />
+            </a>
           </div>
         </nav>
       </div>
@@ -167,253 +166,245 @@
         </div>
       </div>
     </header>
-
-    <!-- ====== Hero ====== -->
-
-    <section id="hero" class="hero">
-      <div class="container h-100">
-        <div class="row content h-100">
-          <div class="col-12 col-md-6 m-auto content-text-image">
-            <h1 class="mt-5 mt-lg-0">
-              Nearest Cinema, Newest Movie,
-              <br />
-              <span class="h2"> Find out now! </span>
-            </h1>
-          </div>
-          <div class="col-12 col-md-6 text-center">
-            <div class="row h-100">
-              <div class="row content-hero-image m-md-auto mx-auto">
-                <div class="col-4 img-hero m-auto">
-                  <div class="cover-img"></div>
-                  <img src="./assets/img/Spiderman.png" alt="" />
-                </div>
-                <div class="col-4 img-hero mt-3">
-                  <img src="./assets/img/lion.png" alt="" />
-                </div>
-                <div class="col-4 img-hero">
-                  <img src="./assets/img/peince.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---======Hero end=====-->
-    <!--======Now Showing=====-->
-    <section class="now-showing">
+    <div class="navbar-fixed">
+      <div class=""></div>
+    </div>
+    <!--End Header-->
+    <!--Detail Movie-->
+    <section id="detail-movie">
       <div class="container">
-        <div class="row text-now-showing">
-          <div class="col-8">
-            <h4>Now Showing</h4>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3 text-center">
+            <img src="./assets/img/spider-movie.png" alt="" class="img-fluid" />
           </div>
-          <div class="col-4 text-right">
-            <a href="#"><h5>view all</h5></a>
-          </div>
-        </div>
-      </div>
-      <div class="now-showing-container">
-        <div class="container position-absolute">
-          <div class="row">
-            <div class="slider">
-              <div class="slide film-now-showing text-center" id="slide-1 ">
-                <div class="img-movie">
-                  <img src="./assets/img/spider-movie.png" alt="" />
-                </div>
-                <div class="film-now-showing-detail">
-                  <h6>Spider-Man: Homecoming</h6>
-                  <p>Acion, Adventure, Sci-FI</p>
-                  <a type="button" class="btn btn-primary btn-block">Detail</a>
-                  <a type="button" class="btn btn-outline-primary btn-block">
-                    Book Now
-                  </a>
-                </div>
+          <div class="col-12 col-md-8 col-lg-9">
+            <div class="row">
+              <div class="col-12 text-center text-md-left my-4">
+                <h1 class="h4">Spider-Man: Homecoming</h1>
+                <p>Adventure, Action, Sci-Fi</p>
               </div>
-              <div class="slide film-now-showing text-center" id="slide-1 ">
-                <div class="img-movie">
-                  <img src="./assets/img/iron.png" alt="" />
-                </div>
-                <div class="film-now-showing-detail">
-                  <h6>Avengers: Age of Ultron</h6>
-                  <p>Acion, Adventure, Sci-FI</p>
-                  <a type="button" class="btn btn-primary btn-block">Detail</a>
-                  <a type="button" class="btn btn-outline-primary btn-block">
-                    Book Now
-                  </a>
-                </div>
+              <div class="col-6">
+                <p>Release Date</p>
+                <h6>June 28, 2017</h6>
               </div>
-              <div class="slide film-now-showing text-center" id="slide-1 ">
-                <div class="img-movie">
-                  <img src="./assets/img/jonwick-3.jpg" alt="" />
-                </div>
-                <div class="film-now-showing-detail">
-                  <h6>John Wick: Chapter 3 - Parabellum</h6>
-                  <p>Action, Crime, Thriller</p>
-                  <a type="button" class="btn btn-primary btn-block">Detail</a>
-                  <a type="button" class="btn btn-outline-primary btn-block">
-                    Book Now
-                  </a>
-                </div>
+              <div class="col-6">
+                <p>Directed by</p>
+                <h6>Jon Watss</h6>
               </div>
-              <div class="slide film-now-showing text-center" id="slide-1 ">
-                <div class="img-movie">
-                  <img src="./assets/img/lion-king.jpg" alt="" />
-                </div>
-                <div class="film-now-showing-detail">
-                  <h6>The Lion King</h6>
-                  <p>Animation, Adventure, Drama</p>
-                  <a type="button" class="btn btn-primary btn-block">Detail</a>
-                  <a type="button" class="btn btn-outline-primary btn-block">
-                    Book Now
-                  </a>
-                </div>
+              <div class="col-6 my-4">
+                <p>Duration</p>
+                <h6>2 hours 13 minutes</h6>
               </div>
-              <div class="slide film-now-showing text-center" id="slide-1 ">
-                <div class="img-movie">
-                  <img src="./assets/img/moana.jpg" alt="" />
-                </div>
-                <div class="film-now-showing-detail">
-                  <h6>Moana</h6>
-                  <p>Animation, Adventure, Comedy</p>
-                  <a type="button" class="btn btn-primary btn-block">Detail</a>
-                  <a type="button" class="btn btn-outline-primary btn-block">
-                    Book Now
-                  </a>
-                </div>
+              <div class="col-6 my-4">
+                <p>Casts</p>
+                <h6>Tom Holland, Michael Keaton, Robert Downey Jr., ...</h6>
+              </div>
+              <div class="col-12">
+                <p>Synopsis</p>
+                <h6>
+                  Thrilled by his experience with the Avengers, Peter returns
+                  home, where he lives with his Aunt May, under the watchful eye
+                  of his new mentor Tony Stark, Peter tries to fall back into
+                  his normal daily routine - distracted by thoughts of proving
+                  himself to be more than just your friendly neighborhood
+                  Spider-Man - but when the Vulture emerges as a new villain,
+                  everything that Peter holds most important will be threatened.
+                </h6>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!--==== Now Showing End ====-->
-
-    <!--==== Up cuming ====-->
-    <section class="upcoming container">
-      <div class="d-flex container justify-content-between upcoming-text mt-4">
-        <h4>Upcoming Movies</h4>
-        <a href="#"><h5>view all</h5></a>
-      </div>
-      <div class="slider upcoming-button">
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-primary btn-block">September</a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block">
-            October
-          </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block">
-            November
-          </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block">
-            December
-          </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block">
-            January
-          </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block">
-            February
-          </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block"> March </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block"> April </a>
-        </div>
-        <div class="slide upcoming-button-month">
-          <a type="button" class="btn btn-outline-primary btn-block"> May </a>
-        </div>
-      </div>
-      <div class="slider mt-3 mb-5">
-        <div class="upcoming-movie slide text-center">
-          <img src="./assets/img//black-widow.png" alt="" />
-          <h6 class="mt-2">Moana</h6>
-          <p>Animation, Adventure, Comedy</p>
-          <a type="button" class="btn btn-outline-primary btn-block">
-            Book Now
-          </a>
-        </div>
-        <div class="upcoming-movie slide text-center">
-          <img src="./assets/img//black-widow.png" alt="" />
-          <h6 class="mt-2">Moana</h6>
-          <p>Animation, Adventure, Comedy</p>
-          <a type="button" class="btn btn-outline-primary btn-block">
-            Detail
-          </a>
-        </div>
-        <div class="upcoming-movie slide text-center">
-          <img src="./assets/img//black-widow.png" alt="" />
-          <h6 class="mt-2">Moana</h6>
-          <p>Animation, Adventure, Comedy</p>
-          <a type="button" class="btn btn-outline-primary btn-block">
-            Details
-          </a>
-        </div>
-        <div class="upcoming-movie slide text-center">
-          <img src="./assets/img//black-widow.png" alt="" />
-          <h6 class="mt-2">Moana</h6>
-          <p>Animation, Adventure, Comedy</p>
-          <a type="button" class="btn btn-outline-primary btn-block">
-            Details
-          </a>
-        </div>
-        <div class="upcoming-movie slide text-center">
-          <img src="./assets/img//black-widow.png" alt="" />
-          <h6 class="mt-2">Moana</h6>
-          <p>Animation, Adventure, Comedy</p>
-          <a type="button" class="btn btn-outline-primary btn-block">
-            Details
-          </a>
-        </div>
-      </div>
-    </section>
-    <!--======Upcomming End======-->
-    <!--======Join-email==========-->
-    <section class="join-email container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="h5 my-5">
-            Be the vanguard of the
-            <br />
-            <span class="h1">Moviegoers</span>
-          </h2>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-          <form class="form-inline">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">
-              Join Now
+    <!--Detail Movie End-->
+    <!--Show Time & Ticket-->
+    <section id="showticket">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-12 my-3 text-center">
+            <h4>Showtimes and Tickets</h4>
+          </div>
+          <div class="col-12 col-md-6 text-md-right text-center mb-4">
+            <button
+              class="btn btn-secondary dropdown-toggle btn-showticket"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span
+                class="iconify"
+                data-icon="uil:calender"
+                data-inline="false"
+              ></span>
+              <span class="pl-3">27/07/20</span>
             </button>
-          </form>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-left">
+            <button
+              class="btn btn-secondary dropdown-toggle btn-showticket"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span
+                class="iconify"
+                data-icon="entypo:location"
+                data-inline="false"
+              ></span>
+              <span class="pl-3">Location</span>
+            </button>
+          </div>
         </div>
-        <div class="col-12 text-center my-5">
-          <p>
-            By joining you as a Tickitz member,
-            <br />
-            we will always send you the latest updates via email .
-          </p>
+
+        <div class="movie-schedule row my-5">
+          <div
+            class="col-12 d-flex flex-wrap align-items-center justify-content-center"
+          >
+            <div class="movie-schedule-card">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="./assets/img/ebv.id.png" alt="ebu.id" />
+                </div>
+                <div class="col-7">
+                  <h5>ebv.id</h5>
+                  <p>Whatever street No.12, South Purwokerto</p>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-row flex-wrap time-available">
+                <div class="time">
+                  <a href="#" class="availble">08:30am</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">10:30pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="disabled">12:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="now-play">02:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">04:30pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="disabled">07:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">08:30pm</a>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-between my-3">
+                <p>Price</p>
+                <h6>$10.00/seat</h6>
+              </div>
+              <div class="col-12 d-flex justify-content-between my-3">
+                <a class="btn btn-primary" href="#" role="button">Book now</a>
+                <a class="btn btn-outline-primary" href="#" role="button"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="movie-schedule-card">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="./assets/img/CineOne21.png" alt="ebu.id" />
+                </div>
+                <div class="col-7">
+                  <h5>ebv.id</h5>
+                  <p>Whatever street No.12, South Purwokerto</p>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-row flex-wrap time-available">
+                <div class="time">
+                  <a href="#" class="availble">08:30am</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">10:30pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="disabled">12:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="now-play">02:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">04:30pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="disabled">07:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">08:30pm</a>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-between my-3">
+                <p>Price</p>
+                <h6>$10.00/seat</h6>
+              </div>
+              <div class="col-12 d-flex justify-content-between my-3">
+                <a class="btn btn-primary" href="#" role="button">Book now</a>
+                <a class="btn btn-outline-primary" href="#" role="button"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="movie-schedule-card">
+              <div class="row align-items-center">
+                <div class="col-4">
+                  <img src="./assets/img/hiflix.png" alt="ebu.id" />
+                </div>
+                <div class="col-7">
+                  <h5>ebv.id</h5>
+                  <p>Whatever street No.12, South Purwokerto</p>
+                </div>
+              </div>
+              <div class="col-12 d-flex flex-row flex-wrap time-available">
+                <div class="time">
+                  <a href="#" class="availble">08:30am</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">10:30pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="disabled">12:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="now-play">02:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">04:30pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="disabled">07:00pm</a>
+                </div>
+                <div class="time">
+                  <a href="#" class="availble">08:30pm</a>
+                </div>
+              </div>
+              <div class="col-12 d-flex justify-content-between my-3">
+                <p>Price</p>
+                <h6>$10.00/seat</h6>
+              </div>
+              <div class="col-12 d-flex justify-content-between my-3">
+                <a class="btn btn-primary" href="#" role="button">Book now</a>
+                <a class="btn btn-outline-primary" href="#" role="button"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="div text-center view-more">
+          <a href="#">View More</a>
         </div>
       </div>
     </section>
-    <!--Join Email-->
+
     <!--Footer-->
     <footer id="footer">
-      <div class="container">
+      <div class="container footer">
         <div class="row">
           <div class="col-12 col-md-4 footer-tickitz mb-3">
             <img src="./assets/img/Logo-purple.png" alt="logo tickitz" />
