@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Icon-->
+    <!--Icon-->
+    <!--style-->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!--style-->
+    <title>Tickitz | Buuy Out ticket</title>
+  </head>
+
+  <body>
+    <!-- Header-->
+    <header id="header" class="fixed-top bg-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light container">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/img/Logo-purple.png" alt="Logo Tickitz" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span
+              class="iconify"
+              data-icon="gg:menu-right-alt"
+              data-inline="false"
+            ></span>
+          </button>
+
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ml-lg-5 mb-md-2 active">
+                <a class="nav-link" href="#"
+                  >Movies <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item ml-lg-3">
+                <a class="nav-link" href="#">Cinemax</a>
+              </li>
+              <li class="nav-item ml-lg-3">
+                <a class="nav-link" href="#">Buy Ticket</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mr-2"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Location
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Jakarta</a>
+                  <a class="dropdown-item" href="#">Bekasi</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+
+            <form class="form-inline collapse" id="collapseExample">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <a
+              class="search-collapse mr-3 ml-1"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <span
+                class="iconify"
+                data-icon="bx:bx-search"
+                data-inline="false"
+                data-height="25"
+                color="gray"
+              ></span>
+            </a>
+            <a class="user-profile" href="./signup.html" role="button">
+              <img src="./assets/img/user.jpeg" alt="user profile" />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!--Mobile Navbar-->
+      <div
+        class="collapse navbar-collapse mobile-nav bg-white"
+        id="navbarSupportedContent"
+      >
+        <div class="d-flex flex-column align-items-center">
+          <div class="p-2 mt-4 container search">
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="Search"
+            />
+            <a href="">
+              <span
+                class="iconify mobile-search-icon"
+                data-icon="bx:bx-search"
+                data-inline="false"
+              ></span>
+            </a>
+          </div>
+          <div class="hr"></div>
+          <div class="p-2 py-3">
+            <ul class="navbar-nav">
+              <li class="nav-item location-dropdown">
+                <a
+                  class="nav-link dropdown-toggle mr-2 text-center"
+                  data-toggle="collapse"
+                  href="#location-mobile-nav"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="location-mobile-nav"
+                >
+                  Location
+                </a>
+                <div class="collapse text-center" id="location-mobile-nav">
+                  <a class="" href="#">Jakarta</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="" href="#">Bekasi</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="hr"></div>
+          <div class="p-2 py-3"><a href="#"> Movies</a></div>
+          <div class="hr"></div>
+          <div class="p-2 py-3"><a href="#"> CInemax</a></div>
+          <div class="hr"></div>
+          <div class="p-2 py-3"><a href="#"> Buy Ticket</a></div>
+          <div class="hr"></div>
+          <div class="p-2 copyrigth">© 2020 Tickitz. All Rights Reserved.</div>
+          <div
+            class="back-cover"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          ></div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-fixed">
+      <div class=""></div>
+    </div>
+    <!--End Header-->
+    <!--orderpage-->
+    <section id="order-page">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="movie-title mb-5">
+              <h5>Movie Selected</h5>
+              <div
+                class="d-flex flex-row justify-content-between title my-4 align-items-center"
+              >
+                <h5>Spider-Man: Homecoming</h5>
+                <button type="button" class="btn change-movie btn-secondary">
+                  Change movie
+                </button>
+              </div>
+            </div>
+            <!--studio seat-->
+            <div class="seat-cinemas">
+              <h5>Choose Your Seat</h5>
+              <div class="your-seat">
+                <div class="row d-flex justify-content-center">
+                  <div class="cinema-studio">
+                    <div class="row justify-content-center screen">
+                      <p>Screen</p>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>A</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>B</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>C</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat selected"></div>
+                        <div class="seat selected"></div>
+                        <div class="seat selected"></div>
+                        <div class="seat"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>D</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>E</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>F</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="love-seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col">
+                          <p>G</p>
+                        </div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat sold"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="space"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                        <div class="seat"></div>
+                      </div>
+                    </div>
+                    <div class="row-seat">
+                      <div class="col-seat d-flex flex-row">
+                        <div class="seating-key-col"></div>
+                        <div class="seat-key-row">
+                          <p>1</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>2</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>3</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>4</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>5</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>6</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>7</p>
+                        </div>
+                        <div class="space"></div>
+                        <div class="seat-key-row">
+                          <p>8</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>9</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>10</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>11</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>12</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>13</p>
+                        </div>
+                        <div class="seat-key-row">
+                          <p>14</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="your-seat-info my-5">
+                    <div class="row">
+                      <div class="col">
+                        <h6>Seating key</h6>
+                      </div>
+                    </div>
+                    <div class="row info-mobile">
+                      <div class="col-12 d-flex flex-row flex-wrap">
+                        <div
+                          class="info seat-mobile d-flex flex-row align-items-center m-1 mr-5"
+                        >
+                          <span
+                            class="iconify test"
+                            data-icon="ant-design:arrow-down-outlined"
+                            data-inline="false"
+                          ></span>
+                          <p>A-G</p>
+                        </div>
+                        <div
+                          class="info seat-mobile d-flex flex-row align-items-center"
+                        >
+                          <span
+                            class="iconify"
+                            data-icon="ant-design:arrow-right-outlined"
+                            data-inline="false"
+                          ></span>
+                          <p>1-14</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 d-flex flex-row flex-wrap">
+                        <div
+                          class="info d-flex flex-row align-items-center m-1"
+                        >
+                          <div class="seat availble"></div>
+                          <p>Availabele</p>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                          <div class="seat selected"></div>
+                          <p>Selected</p>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                          <div class="seat love-nest"></div>
+                          <p>Love nest</p>
+                        </div>
+                        <div class="info d-flex flex-row align-items-center">
+                          <div class="seat sold"></div>
+                          <p>sold</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--seat-choose-mobile-->
+            <div class="seat-choose-mobile my-4">
+              <form action="">
+                <div class="form-group row">
+                  <div class="col-6">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                      <option>D</option>
+                      <option>E</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <a
+                class="btn btn-outline-primary btn-block mt-2"
+                href="#"
+                role="button"
+                >Add new seat</a
+              >
+            </div>
+
+            <!--change movie-->
+            <div
+              class="btn-checkout d-flex justify-content-between flex-wrap my-4"
+            >
+              <a
+                class="btn btn-outline-primary btn-change-movie"
+                href="#"
+                role="button"
+                >Change your movie</a
+              >
+              <a
+                class="btn btn-primary"
+                href="./payment-page.html"
+                role="button"
+                >Checkout now</a
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h5>Order Info</h5>
+            <div class="order-info">
+              <div class="text-center">
+                <img src="./assets/img/CineOne21.png" alt="" />
+                <h5>CineOne21 Cinema</h5>
+              </div>
+              <div class="row d-flex justify-content-between mt-4">
+                <p>Movie selected</p>
+                <h6>Spider-Man: Homecoming</h6>
+              </div>
+              <div class="row d-flex justify-content-between">
+                <p>Tuesday, 07 July 2020</p>
+                <h6>02:00pm</h6>
+              </div>
+              <div class="row d-flex justify-content-between">
+                <p>One ticket price</p>
+                <h6>$10</h6>
+              </div>
+              <div class="row d-flex justify-content-between">
+                <p>Seat choosed</p>
+                <h6>$C4, C5, C6</h6>
+              </div>
+              <hr />
+              <div
+                class="row d-flex justify-content-between total align-items-center"
+              >
+                <h6>Total Payment</h6>
+                <p>$30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-12 col-md-4 footer-tickitz mb-3">
+            <img src="./assets/img/Logo-purple.png" alt="logo tickitz" />
+            <p>
+              Stop waiting in line. Buy tickets conveniently, watch movies
+              quietly.
+            </p>
+          </div>
+          <div class="col-12 col-md-2 footer-explore mb-3">
+            <h5>Explore</h5>
+            <div
+              class="d-flex flex-md-column flex-row footer-explore-link flex-wrap"
+            >
+              <p><a href="#">Cinemas</a></p>
+              <p><a href="">Movie List</a></p>
+              <p><a href="">My Ticket</a></p>
+              <p><a href="">Notivication</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 footer-sponsor mb-3">
+            <h5>Our Sponsor</h5>
+            <div
+              class="d-flex flex-md-column flex-row footer-sposnsor-img flex-wrap mt-3 mb-3"
+            >
+              <a href="#"><img src="./assets/img/ebv.id.png" alt="ebv.id" /></a>
+              <a href="#"
+                ><img src="./assets/img/CineOne21.png" alt="CineOne21"
+              /></a>
+              <a href="#"><img src="./assets/img/hiflix.png" alt="hiflix" /></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 footer-social mb-3">
+            <h5>Follow us</h5>
+            <div class="social-media d-flex flex-md-column flex-row flex-wrap">
+              <p>
+                <a href="#">
+                  <span
+                    class="iconify"
+                    data-icon="feather:facebook"
+                    data-inline="false"
+                  ></span>
+                  <span class="social-name"> Tickitz Cinema id</span>
+                </a>
+              </p>
+              <p>
+                <a href="#">
+                  <span
+                    class="iconify"
+                    data-icon="simple-line-icons:social-instagram"
+                    data-inline="false"
+                  ></span>
+                  <span class="social-name"> tickitz.id</span>
+                </a>
+              </p>
+              <p>
+                <a href="#">
+                  <span
+                    class="iconify"
+                    data-icon="ph:twitter-logo"
+                    data-inline="false"
+                  ></span>
+                  <span class="social-name"> tickitz.id</span>
+                </a>
+              </p>
+              <p>
+                <a href="#">
+                  <span
+                    class="iconify"
+                    data-icon="simple-line-icons:social-youtube"
+                    data-inline="false"
+                  ></span>
+                  <span class="social-name"> Tickitz Cinema id</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mb-2 text-center licence">
+          <div class="col-12">
+            <p>© 2020 Tickitz. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Javascript-->
+    <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
+</html>

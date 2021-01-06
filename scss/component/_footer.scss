@@ -1,0 +1,58 @@
+/*====== Footer ======*/
+#footer {
+  margin-top: 100px;
+  .footer {
+    margin-top: 70px;
+    &-tickitz {
+      img {
+        height: 45px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: $gray-700;
+      }
+    }
+
+    &-explore {
+      h5 {
+        padding-bottom: 10px;
+      }
+      a {
+        color: $gray-700;
+        margin-right: 15px;
+      }
+    }
+
+    &-sponsor {
+      img {
+        height: 45px;
+        width: auto;
+      }
+    }
+
+    &-social {
+      a {
+        font-size: 25px;
+        margin-right: 20px;
+        color: $gray-700;
+
+        @include tablet() {
+          font-size: 16px;
+          margin-right: 10px;
+        }
+
+        .social-name {
+          margin-left: 20px;
+          display: none;
+
+          @include desktop() {
+            display: inherit;
+          }
+        }
+      }
+    }
+  }
+  .licence {
+    color: $gray-700;
+  }
+}

@@ -1,0 +1,220 @@
+.hero {
+  font-size: 20px;
+  height: 100vh;
+
+  .content {
+    .content-text-image {
+      h1 {
+        font-size: 16px;
+        color: $gray-600;
+        padding: 0;
+        span {
+          color: $purple;
+          font-weight: 700;
+
+          @include tablet() {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    .content-hero-image {
+      height: 460px;
+      width: 371px;
+
+      .img-hero {
+        height: 80%;
+        padding: 0;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 6px;
+          bottom: 0;
+          right: 5px;
+          z-index: 1;
+          border-radius: 15px;
+          background: rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+          height: 100%;
+          width: 90%;
+          object-fit: cover;
+          border-radius: 15px;
+          box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      @include phone() {
+        height: 350px;
+        width: 282.52px;
+      }
+    }
+  }
+}
+
+/* =====Now Showing====== */
+
+.now-showing {
+  height: 450px;
+  background-color: #f5f6f8;
+
+  .now-showing-container {
+    width: 82%;
+    margin: auto;
+  }
+
+  .text-now-showing {
+    color: $purple;
+    padding-top: 36px;
+
+    h4 {
+      font-weight: 600;
+      width: 15rem;
+
+      @include tablet() {
+        &::after {
+          content: "";
+          width: 45%;
+
+          display: block;
+          margin-left: 28px;
+          padding-top: 10px;
+          border-bottom: 3px solid $purple;
+        }
+      }
+    }
+  }
+  .slider {
+    margin-right: -5%;
+    margin-top: 20px;
+
+    @include desktop() {
+      margin-right: -20%;
+    }
+  }
+
+  .film-now-showing {
+    border-radius: 8px;
+    margin: 15px;
+
+    .img-movie {
+      padding: 15px;
+      border: 3px solid white;
+      height: 280px;
+      width: 195px;
+      object-fit: cover;
+      border-radius: 8px;
+
+      img {
+        border-radius: 8px;
+        height: 240px;
+        width: 160px;
+        object-fit: cover;
+      }
+    }
+
+    p {
+      color: $gray-600;
+      font-size: 12px;
+    }
+
+    &-detail {
+      display: none;
+      width: 195px;
+      margin: -280px auto 0;
+      padding: 280px 15px 15px;
+      border-radius: 8px;
+      background-color: $white;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.17);
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      transition: 0.2s ease 0s;
+
+      img {
+        z-index: 2;
+      }
+
+      .film-now-showing-detail {
+        transition-delay: 2s;
+        display: block;
+        z-index: 1;
+      }
+    }
+  }
+}
+/*=======Now Showing=======*/
+/*======== Upc oming =======*/
+.upcoming {
+  &-text {
+    padding: 45px 0 36px;
+
+    h4 {
+      font-weight: 600;
+    }
+  }
+
+  &-button {
+    .upcoming-button-month {
+      width: 120px;
+      margin: 15px 15px 15px;
+    }
+  }
+
+  .upcoming-button::-webkit-scrollbar-thumb {
+    background-color: $gray-300;
+  }
+
+  &-movie {
+    width: 195px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid $gray-400;
+    border-radius: 8px;
+
+    p {
+      color: $gray-600;
+      font-size: 12px;
+    }
+  }
+
+  .slider {
+    margin-right: -10%;
+  }
+  .slider::-webkit-scrollbar-thumb {
+    background-color: $gray-300;
+  }
+}
+
+/*====== End Up-coming ======*/
+/*====== Join-email ======*/
+
+.join-email {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.17);
+  border-radius: 15px;
+  h2 {
+    span {
+      color: $purple;
+    }
+  }
+  form {
+    .btn {
+      @include phone() {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+  p {
+    color: $gray-600;
+  }
+}
+
+/*====== End Join Email======*/

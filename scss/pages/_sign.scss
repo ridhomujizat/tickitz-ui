@@ -1,0 +1,170 @@
+.sign {
+  height: 100vh;
+
+  .info-sign {
+    display: none;
+    @include tablet() {
+      background: linear-gradient(
+          0deg,
+          rgba(43, 21, 107, 0.8),
+          rgba(43, 21, 107, 0.8)
+        ),
+        url(/assets/img/iron.png);
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .content {
+        width: 80%;
+
+        color: white;
+        .logo-img-login {
+          height: 150px;
+        }
+
+        .logo-img-signup {
+          height: 100px;
+          margin-left: 0;
+        }
+
+        h1 {
+          font-weight: 600;
+        }
+        p {
+          font-size: 17px;
+          line-height: 2.5rem;
+          color: rgba(255, 255, 255, 0.7);
+        }
+
+        .order-status {
+          .older-list-status {
+            counter-increment: item;
+            margin-bottom: 0;
+            padding-bottom: 20px;
+
+            .active {
+              color: $white;
+            }
+
+            .active::before {
+              background-color: $white;
+              color: $purple;
+            }
+
+            p {
+              margin-bottom: 0;
+            }
+            p::before {
+              margin-right: 10px;
+              content: counter(item);
+              border: 2px solid #ffffff;
+              border-radius: 100%;
+              color: white;
+              width: 45px;
+              text-align: center;
+              display: inline-block;
+            }
+
+            .line {
+              height: 20px;
+              border-left: 2px solid #ffffff;
+              z-index: 1;
+              position: absolute;
+              margin: 0 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*-----Form sign up or sing in---*/
+
+  .form-sign {
+    margin: auto;
+    max-width: 100%;
+
+    .logo-mobile {
+      img {
+        height: 25px;
+      }
+      @include tablet() {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .sign-p {
+      color: $gray-600;
+      font-size: 18px;
+
+      @include phone() {
+        display: none;
+      }
+    }
+
+    form {
+      .form-control {
+        font-size: 16px;
+        color: $gray-600;
+        border-radius: 16px;
+        padding: 30px;
+      }
+
+      .form-label {
+        font-size: 16px;
+      }
+
+      input[type="checkbox"] {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+      }
+
+      .pass_show {
+        font-size: 20px;
+        color: $gray-600;
+        float: right;
+        margin-right: 13px;
+        margin-top: -40px;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .btn-login {
+      padding: 15px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+      color: $gray-600;
+      border-radius: 16px;
+      margin-left: 25px;
+      margin-bottom: 10px;
+      width: 150px;
+
+      img {
+        height: 20px;
+      }
+
+      &:hover {
+        background-color: $gray-200;
+      }
+
+      @include desktop() {
+      }
+
+      @include phone() {
+        width: 50px;
+        margin-left: 10px;
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}

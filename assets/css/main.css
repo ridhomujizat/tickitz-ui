@@ -9934,146 +9934,7 @@ body p {
   color: #4e4b66;
 }
 
-/* ======== Sign =========== */
-.sign {
-  height: 100vh;
-  /*-----Form sign up or sing in---*/
-}
-.sign .info-sign {
-  display: none;
-}
-@media (min-width: 576px) {
-  .sign .info-sign {
-    background: linear-gradient(0deg, rgba(43, 21, 107, 0.8), rgba(43, 21, 107, 0.8)), url(/assets/img/iron.png);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .sign .info-sign .content {
-    width: 80%;
-    color: white;
-  }
-  .sign .info-sign .content .logo-img-login {
-    height: 150px;
-  }
-  .sign .info-sign .content .logo-img-signup {
-    height: 100px;
-    margin-left: 0;
-  }
-  .sign .info-sign .content h1 {
-    font-weight: 600;
-  }
-  .sign .info-sign .content p {
-    font-size: 17px;
-    line-height: 2.5rem;
-    color: rgba(255, 255, 255, 0.7);
-  }
-  .sign .info-sign .content .order-status .older-list-status {
-    counter-increment: item;
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }
-  .sign .info-sign .content .order-status .older-list-status .active {
-    color: #fff;
-  }
-  .sign .info-sign .content .order-status .older-list-status .active::before {
-    background-color: #fff;
-    color: #5f2eea;
-  }
-  .sign .info-sign .content .order-status .older-list-status p {
-    margin-bottom: 0;
-  }
-  .sign .info-sign .content .order-status .older-list-status p::before {
-    margin-right: 10px;
-    content: counter(item);
-    border: 2px solid #ffffff;
-    border-radius: 100%;
-    color: white;
-    width: 45px;
-    text-align: center;
-    display: inline-block;
-  }
-  .sign .info-sign .content .order-status .older-list-status .line {
-    height: 20px;
-    border-left: 2px solid #ffffff;
-    z-index: 1;
-    position: absolute;
-    margin: 0 1.4rem;
-  }
-}
-.sign .form-sign {
-  margin: auto;
-  max-width: 100%;
-}
-@media (min-width: 576px) {
-  .sign .form-sign .logo-mobile {
-    display: none;
-  }
-}
-.sign .form-sign h2 {
-  font-weight: 700;
-}
-.sign .form-sign .sign-p {
-  color: #aaaaaa;
-  font-size: 18px;
-}
-@media (max-width: 576px) {
-  .sign .form-sign .sign-p {
-    display: none;
-  }
-}
-.sign .form-sign form .form-control {
-  font-size: 16px;
-  color: #aaaaaa;
-  border-radius: 16px;
-  padding: 30px;
-}
-.sign .form-sign form .form-label {
-  font-size: 16px;
-}
-.sign .form-sign form input[type=checkbox] {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-}
-.sign .form-sign form .pass_show {
-  font-size: 20px;
-  color: #aaaaaa;
-  float: right;
-  margin-right: 13px;
-  margin-top: -40px;
-  position: relative;
-  z-index: 2;
-}
-.sign .form-sign .btn-login {
-  padding: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-  color: #aaaaaa;
-  border-radius: 16px;
-  margin-left: 25px;
-  margin-bottom: 10px;
-  width: 150px;
-}
-.sign .form-sign .btn-login img {
-  height: 20px;
-}
-.sign .form-sign .btn-login:hover {
-  background-color: #e9ecef;
-}
-@media (max-width: 576px) {
-  .sign .form-sign .btn-login {
-    width: 50px;
-    margin-left: 10px;
-  }
-  .sign .form-sign .btn-login span {
-    display: none;
-  }
-}
-
-/* ===== Sign end =========*/
-/* ====== Landing Page ========*/
+/* ======== component =========== */
 header .navbar {
   padding: 10px 0 10px;
 }
@@ -10147,11 +10008,205 @@ header .mobile-nav .back-cover {
 }
 
 .navbar-fixed {
-  height: 90px;
+  height: 87px;
   display: block;
 }
+@media (min-width: 992px) {
+  .navbar-fixed {
+    height: 70px;
+  }
+}
 
-/* ==== Hero ====*/
+/*====== Footer ======*/
+#footer {
+  margin-top: 100px;
+}
+#footer .footer {
+  margin-top: 70px;
+}
+#footer .footer-tickitz img {
+  height: 45px;
+  margin-bottom: 20px;
+}
+#footer .footer-tickitz p {
+  color: #4e4b66;
+}
+#footer .footer-explore h5 {
+  padding-bottom: 10px;
+}
+#footer .footer-explore a {
+  color: #4e4b66;
+  margin-right: 15px;
+}
+#footer .footer-sponsor img {
+  height: 45px;
+  width: auto;
+}
+#footer .footer-social a {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #4e4b66;
+}
+@media (min-width: 576px) {
+  #footer .footer-social a {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+}
+#footer .footer-social a .social-name {
+  margin-left: 20px;
+  display: none;
+}
+@media (min-width: 992px) {
+  #footer .footer-social a .social-name {
+    display: inherit;
+  }
+}
+#footer .licence {
+  color: #4e4b66;
+}
+
+/* ===== Pages =========*/
+.sign {
+  height: 100vh;
+  /*-----Form sign up or sing in---*/
+}
+.sign .info-sign {
+  display: none;
+}
+@media (min-width: 576px) {
+  .sign .info-sign {
+    background: linear-gradient(0deg, rgba(43, 21, 107, 0.8), rgba(43, 21, 107, 0.8)), url(/assets/img/iron.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sign .info-sign .content {
+    width: 80%;
+    color: white;
+  }
+  .sign .info-sign .content .logo-img-login {
+    height: 150px;
+  }
+  .sign .info-sign .content .logo-img-signup {
+    height: 100px;
+    margin-left: 0;
+  }
+  .sign .info-sign .content h1 {
+    font-weight: 600;
+  }
+  .sign .info-sign .content p {
+    font-size: 17px;
+    line-height: 2.5rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .sign .info-sign .content .order-status .older-list-status {
+    counter-increment: item;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+  .sign .info-sign .content .order-status .older-list-status .active {
+    color: #fff;
+  }
+  .sign .info-sign .content .order-status .older-list-status .active::before {
+    background-color: #fff;
+    color: #5f2eea;
+  }
+  .sign .info-sign .content .order-status .older-list-status p {
+    margin-bottom: 0;
+  }
+  .sign .info-sign .content .order-status .older-list-status p::before {
+    margin-right: 10px;
+    content: counter(item);
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    color: white;
+    width: 45px;
+    text-align: center;
+    display: inline-block;
+  }
+  .sign .info-sign .content .order-status .older-list-status .line {
+    height: 20px;
+    border-left: 2px solid #ffffff;
+    z-index: 1;
+    position: absolute;
+    margin: 0 1.4rem;
+  }
+}
+.sign .form-sign {
+  margin: auto;
+  max-width: 100%;
+}
+.sign .form-sign .logo-mobile img {
+  height: 25px;
+}
+@media (min-width: 576px) {
+  .sign .form-sign .logo-mobile {
+    display: none;
+  }
+}
+.sign .form-sign h2 {
+  font-weight: 700;
+}
+.sign .form-sign .sign-p {
+  color: #aaaaaa;
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .sign .form-sign .sign-p {
+    display: none;
+  }
+}
+.sign .form-sign form .form-control {
+  font-size: 16px;
+  color: #aaaaaa;
+  border-radius: 16px;
+  padding: 30px;
+}
+.sign .form-sign form .form-label {
+  font-size: 16px;
+}
+.sign .form-sign form input[type=checkbox] {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.sign .form-sign form .pass_show {
+  font-size: 20px;
+  color: #aaaaaa;
+  float: right;
+  margin-right: 13px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+.sign .form-sign .btn-login {
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  color: #aaaaaa;
+  border-radius: 16px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+.sign .form-sign .btn-login img {
+  height: 20px;
+}
+.sign .form-sign .btn-login:hover {
+  background-color: #e9ecef;
+}
+@media (max-width: 576px) {
+  .sign .form-sign .btn-login {
+    width: 50px;
+    margin-left: 10px;
+  }
+  .sign .form-sign .btn-login span {
+    display: none;
+  }
+}
+
 .hero {
   font-size: 20px;
   height: 100vh;
@@ -10338,57 +10393,6 @@ header .mobile-nav .back-cover {
 }
 
 /*====== End Join Email======*/
-/*====== Footer ======*/
-#footer {
-  margin-top: 100px;
-}
-#footer .footer {
-  margin-top: 70px;
-}
-#footer .footer-tickitz img {
-  height: 45px;
-  margin-bottom: 20px;
-}
-#footer .footer-tickitz p {
-  color: #4e4b66;
-}
-#footer .footer-explore h5 {
-  padding-bottom: 10px;
-}
-#footer .footer-explore a {
-  color: #4e4b66;
-  margin-right: 15px;
-}
-#footer .footer-sponsor img {
-  height: 45px;
-  width: auto;
-}
-#footer .footer-social a {
-  font-size: 25px;
-  margin-right: 20px;
-  color: #4e4b66;
-}
-@media (min-width: 576px) {
-  #footer .footer-social a {
-    font-size: 16px;
-    margin-right: 10px;
-  }
-}
-#footer .footer-social a .social-name {
-  margin-left: 20px;
-  display: none;
-}
-@media (min-width: 992px) {
-  #footer .footer-social a .social-name {
-    display: inherit;
-  }
-}
-#footer .licence {
-  color: #4e4b66;
-}
-
-/*====== End-Footer ======*/
-/*====== Detail movie page ======*/
 #detail-movie img {
   border-radius: 8px;
   border: 1px solid #ced4da;
@@ -10410,8 +10414,7 @@ header .mobile-nav .back-cover {
   border: 0.5px solid #ced4da;
   padding: 15px;
   border-radius: 10px;
-  width: 330px;
-  margin: 20px;
+  margin-bottom: 15px;
 }
 #showticket .movie-schedule-card img {
   height: 40px;
@@ -10455,6 +10458,722 @@ header .mobile-nav .back-cover {
 }
 #showticket .view-more a:after {
   margin: 0 -55% 0 0.5em;
+}
+
+#order-page {
+  background-color: #f5f6f8;
+}
+#order-page h5 {
+  font-weight: 600;
+  padding: 0;
+  font-size: 24px;
+}
+@media (max-width: 576px) {
+  #order-page h5 {
+    font-size: 20px;
+  }
+}
+#order-page .movie-title .title {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 23px 30px 20px 30px;
+}
+#order-page .movie-title .title .change-movie {
+  color: #5f2eea;
+  background-color: #ced4da;
+}
+#order-page .movie-title .title .change-movie:hover {
+  background-color: #aaaaaa;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  #order-page .movie-title {
+    display: none;
+  }
+}
+#order-page .order-info {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 20px 30px 20px 30px;
+}
+#order-page .order-info img {
+  height: 60px;
+  padding: 0;
+}
+#order-page .order-info p {
+  font-size: 12px;
+}
+#order-page .order-info h6 {
+  font-size: 12px;
+}
+#order-page .order-info .total h6 {
+  font-weight: 600;
+}
+#order-page .order-info .total p {
+  font-size: 17px;
+  color: #5f2eea;
+  font-weight: 700;
+}
+#order-page .seat-cinemas .your-seat {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 20px 30px 20px 30px;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio {
+  width: 390px;
+  margin: auto;
+}
+@media (max-width: 576px) {
+  #order-page .seat-cinemas .your-seat .cinema-studio {
+    width: 95%;
+  }
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .screen {
+  margin: 25px;
+}
+@media (max-width: 576px) {
+  #order-page .seat-cinemas .your-seat .cinema-studio .screen {
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: #5f2eea;
+  }
+  #order-page .seat-cinemas .your-seat .cinema-studio .screen p {
+    display: none;
+  }
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat {
+  margin-bottom: 5px;
+  height: 20px;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seat {
+  width: 20px;
+  height: 20px;
+  background-color: #adb5bd;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seat:hover {
+  background-color: #5f2eea;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .space {
+  width: 30px;
+  background-color: #fff;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .love-seat {
+  width: 46px;
+  height: 20px;
+  margin-right: 5px;
+  background-color: #e83e8c;
+  border-radius: 2px;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .love-seat:hover {
+  background-color: #5f2eea;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .sold {
+  background-color: #4e4b66;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .selected {
+  background-color: #5f2eea;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seating-key-col {
+  margin: 5px;
+  width: 20px;
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seating-key-col p {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  #order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seating-key-col {
+    width: 3px;
+    background-color: #17b3a1;
+  }
+  #order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seating-key-col p {
+    display: none;
+  }
+}
+#order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seat-key-row {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+@media (max-width: 576px) {
+  #order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seat-key-row {
+    height: 2px;
+    background-color: #e83e8c;
+  }
+  #order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seat-key-row p {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #order-page .seat-cinemas .your-seat .cinema-studio .row-seat .col-seat .seat-key-row {
+    margin-top: 17px;
+  }
+}
+#order-page .seat-cinemas .your-seat .your-seat-info {
+  margin: auto;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info h6 {
+  font-weight: 600;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info {
+  margin: 5px 10px 5px 5px;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info p {
+  margin: 0;
+  font-size: 12px;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info .seat {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info .availble {
+  background-color: #adb5bd;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info .selected {
+  background-color: #5f2eea;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info .love-nest {
+  background-color: #e83e8c;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info .sold {
+  background-color: #4e4b66;
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info-mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  #order-page .seat-cinemas .your-seat .your-seat-info .info-mobile {
+    display: block;
+  }
+}
+#order-page .seat-cinemas .your-seat .your-seat-info .info-mobile .p {
+  font-size: 12px;
+}
+#order-page .seat-choose-mobile {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px;
+}
+#order-page .seat-choose-mobile form select {
+  background-color: #ced4da;
+  padding: 5px;
+}
+#order-page .seat-choose-mobile a {
+  font-size: 12px;
+}
+@media (min-width: 576px) {
+  #order-page .seat-choose-mobile {
+    display: none;
+  }
+}
+#order-page .btn-checkout a {
+  width: 30%;
+  margin: 10px;
+  font-size: 12px;
+}
+@media (max-width: 576px) {
+  #order-page .btn-checkout a {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #order-page .btn-checkout .btn-change-movie {
+    display: none;
+  }
+}
+
+#payment {
+  background-color: #f5f6f8;
+}
+#payment h5 {
+  font-weight: 600;
+  padding: 0;
+  font-size: 24px;
+}
+@media (max-width: 576px) {
+  #payment h5 {
+    font-size: 20px;
+  }
+}
+#payment .total-mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  #payment .total-mobile {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+  }
+  #payment .total-mobile h6 {
+    font-weight: 600;
+  }
+  #payment .total-mobile p {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+#payment .order .order-info {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px;
+}
+#payment .order .order-info img {
+  height: 60px;
+  padding: 0;
+}
+#payment .order .order-info p {
+  font-size: 16px;
+}
+#payment .order .order-info h6 {
+  font-size: 16px;
+}
+#payment .order .order-info hr {
+  margin-top: 0;
+}
+#payment .order .order-info .total h6 {
+  font-weight: 600;
+}
+#payment .order .order-info .total p {
+  font-size: 17px;
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  #payment .order {
+    display: none;
+  }
+}
+#payment .personal-info {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px;
+}
+#payment .personal-info label {
+  color: #aaaaaa;
+  font-size: 14px;
+}
+#payment .personal-info .warning-form {
+  background-color: rgba(244, 183, 64, 0.3);
+  border-radius: 8px;
+  margin-top: 25px;
+}
+#payment .personal-info .warning-form .warning-icon {
+  margin: 0 10px 10px 20px;
+  font-size: 25px;
+  color: #ffc107;
+}
+#payment .personal-info .warning-form .warning-text p {
+  margin: 0;
+}
+#payment .payment .payment-method {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 30px;
+}
+#payment .payment .payment-method a {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  height: 40px;
+  width: 125px;
+  border-radius: 8px;
+  border: 1px solid #aaaaaa;
+}
+#payment .payment .payment-method a .payment-image {
+  width: 95px;
+  height: 25px;
+}
+#payment .payment .payment-method a .payment-image img {
+  max-height: 100%;
+  width: auto;
+}
+#payment .payment .payment-method a:hover {
+  background-color: #dee2e6;
+}
+@media (max-width: 576px) {
+  #payment .payment .payment-method a {
+    height: 30px;
+    width: 93.75px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  #payment .payment .payment-method a .payment-image {
+    width: 71.25px;
+    height: 20px;
+  }
+  #payment .payment .payment-method a .payment-image img {
+    max-height: 100%;
+    width: auto;
+  }
+}
+#payment .payment .payment-method .view-more #view-more {
+  width: 60%;
+  margin: 0.7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 300;
+  border: none;
+}
+#payment .payment .payment-method .view-more #view-more:hover {
+  background-color: #fff;
+}
+#payment .payment .payment-method .view-more #view-more::before,
+#payment .payment .payment-method .view-more #view-more::after {
+  content: "";
+  display: inline-block;
+  width: 90%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid #aaaaaa;
+}
+#payment .payment .payment-method .view-more #view-more:after {
+  margin: 0 -55% 0 0.5em;
+}
+#payment .payment .payment-method .offline-payment a {
+  border: none;
+}
+#payment .payment .payment-method .offline-payment a:hover {
+  background-color: #fff;
+}
+#payment .btn-pay a {
+  width: 30%;
+  margin: 10px;
+  font-size: 12px;
+}
+@media (max-width: 576px) {
+  #payment .btn-pay a {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #payment .btn-pay .btn-previous-step {
+    display: none;
+  }
+}
+
+#result-ticket {
+  background-color: #f5f6f8;
+}
+#result-ticket .ticket-show {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px;
+}
+@media (max-width: 576px) {
+  #result-ticket .ticket-show {
+    background-color: #f5f6f8;
+    padding: 30px;
+  }
+}
+#result-ticket .ticket-show h5 {
+  font-weight: 600;
+}
+@media (max-width: 576px) {
+  #result-ticket .ticket-show h5 {
+    display: none;
+  }
+}
+#result-ticket .ticket-show .ticket {
+  position: relative;
+}
+#result-ticket .ticket-show .ticket .heading-ticket {
+  background-color: #5f2eea;
+  border-radius: 15px 15px 0 0;
+  color: white;
+}
+#result-ticket .ticket-show .ticket .heading-ticket img {
+  width: 95px;
+}
+#result-ticket .ticket-show .ticket .heading-ticket .heading-admit-one {
+  border-right: 1px dashed #fff;
+  padding: 20px;
+}
+#result-ticket .ticket-show .ticket .heading-ticket .heading-admit-one img {
+  margin: 0 35% 0 5%;
+}
+#result-ticket .ticket-show .ticket .heading-ticket .heading-admit-one h6 {
+  padding: 0;
+  margin: 0;
+}
+#result-ticket .ticket-show .ticket .heading-ticket .heading-admit-one::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  top: -20px;
+  right: 0;
+  margin-right: -20px;
+  z-index: 2;
+}
+#result-ticket .ticket-show .ticket .heading-ticket .heading-barcode {
+  padding: 20px 10px;
+}
+@media (max-width: 576px) {
+  #result-ticket .ticket-show .ticket .heading-ticket {
+    display: none;
+  }
+}
+#result-ticket .ticket-show .ticket .ticket-info {
+  border: 1px solid #aaaaaa;
+  border-radius: 0 0 8px 8px;
+}
+#result-ticket .ticket-show .ticket .ticket-info .ticket-info-text {
+  padding: 20px;
+  border-right: 1px solid #aaaaaa;
+}
+#result-ticket .ticket-show .ticket .ticket-info .ticket-info-text p {
+  margin-bottom: 2px;
+}
+#result-ticket .ticket-show .ticket .ticket-info .ticket-info-text .price h6 {
+  font-weight: 700;
+  font-size: 18px;
+}
+#result-ticket .ticket-show .ticket .ticket-info .ticket-info-text .price #total-tag {
+  display: none;
+}
+#result-ticket .ticket-show .ticket .ticket-info .ticket-info-barcode {
+  margin: auto;
+}
+@media (max-width: 576px) {
+  #result-ticket .ticket-show .ticket .ticket-info {
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text {
+    border-right: none;
+    border-top: 1px dashed #aaaaaa;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text .price {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #aaaaaa;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text .price #price-tag {
+    display: none;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text .price #total-tag {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text .price h6 {
+    margin: 0;
+    margin-right: 20px;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text::after {
+    content: "";
+    position: absolute;
+    background-color: #f5f6f8;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 2;
+    top: -20px;
+    left: 0;
+    margin-left: -30px;
+  }
+  #result-ticket .ticket-show .ticket .ticket-info .ticket-info-text::before {
+    content: "";
+    position: absolute;
+    background-color: #f5f6f8;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 2;
+    top: -20px;
+    right: 0;
+    margin-right: -30px;
+  }
+}
+@media (max-width: 576px) {
+  #result-ticket .ticket-show .btn-print-ticket {
+    display: none;
+  }
+}
+
+#profile {
+  background-color: #f5f6f8;
+}
+#profile .account-setting {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 0 45px;
+}
+#profile .account-setting .setting {
+  color: black;
+  text-decoration: none;
+  padding: 20px 15px;
+  color: #aaaaaa;
+}
+#profile .account-setting .active {
+  border-bottom: 2px solid #5f2eea;
+  color: #333;
+}
+#profile .account-setting:hover a {
+  text-decoration: none;
+}
+@media (max-width: 576px) {
+  #profile .account-setting {
+    display: none;
+  }
+}
+#profile .profile-section-mobile {
+  display: none;
+  background-color: #fff;
+}
+#profile .profile-section-mobile .setting {
+  color: black;
+  text-decoration: none;
+  padding: 15px 15px;
+  color: #aaaaaa;
+}
+#profile .profile-section-mobile .active {
+  border-bottom: 2px solid #5f2eea;
+  color: #333;
+}
+#profile .profile-section-mobile:hover a {
+  text-decoration: none;
+}
+@media (max-width: 576px) {
+  #profile .profile-section-mobile {
+    display: block;
+  }
+}
+#profile .profile-content {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px;
+}
+#profile .profile-content .info p {
+  font-size: 27px;
+  color: #5f2eea;
+}
+#profile .profile-content .photo-profile img {
+  border-radius: 100%;
+  height: 150px;
+}
+#profile .profile-content .card-point {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+#profile .profile-content .card-point .content-card {
+  z-index: 4;
+  position: relative;
+  color: #fff;
+  height: 80px;
+  padding: 10px;
+  font-weight: 700;
+}
+#profile .profile-content .card-point .content-card span {
+  font-size: 12px;
+}
+#profile .profile-content .card-point .content-card img {
+  height: 35px;
+}
+#profile .profile-content .card-point .circle {
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+#profile .profile-content .card-point .circle::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  margin-top: -30px;
+  margin-right: -10px;
+}
+#profile .profile-content .card-point .circle::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  margin-top: -20px;
+  margin-right: -30px;
+}
+#profile .profile-content .card-point .bg-1 {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  border-radius: 10px;
+  background-image: linear-gradient(75deg, #5f2eea 31.28%, #7647f9 62.16%);
+}
+#profile .profile-content .card-point .bg-2 {
+  top: 0;
+  width: 90%;
+  height: 100px;
+  margin-left: 5%;
+  position: absolute;
+  border-radius: 10px;
+  background-color: rgba(95, 46, 234, 0.4);
+}
+#profile .details-information {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px;
+}
+#profile .details-information form {
+  width: 100%;
+}
+#profile .order-history-ticket {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px;
+}
+#profile .order-history-ticket p {
+  margin-bottom: 2px;
+}
+#profile .order-history-ticket img {
+  height: 50px;
+}
+#profile .order-history-ticket a {
+  color: #333;
+}
+@media (max-width: 576px) {
+  #profile .order-history-ticket a {
+    display: none;
+  }
+}
+#profile .order-history-ticket .btn {
+  width: 35%;
+}
+@media (max-width: 576px) {
+  #profile .order-history-ticket .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #profile .mobile-none {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

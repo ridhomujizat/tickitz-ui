@@ -104,644 +104,207 @@ body {
   }
 }
 
-/* ======== Sign =========== */
+/* ======== component =========== */
+@import "./component/header";
+@import "./component/footer";
 
-.sign {
-  height: 100vh;
+/* ===== Pages =========*/
+@import "./pages/sign";
+@import "./pages/home";
+@import "./pages/detail-movie";
+@import "./pages/oreder-page";
+@import "./pages/payment";
+@import "./pages/result-ticket";
 
-  .info-sign {
-    display: none;
-    @include tablet() {
-      background: linear-gradient(
-          0deg,
-          rgba(43, 21, 107, 0.8),
-          rgba(43, 21, 107, 0.8)
-        ),
-        url(/assets/img/iron.png);
-      background-size: cover;
-      background-position: center;
-
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-
-      .content {
-        width: 80%;
-
-        color: white;
-        .logo-img-login {
-          height: 150px;
-        }
-
-        .logo-img-signup {
-          height: 100px;
-          margin-left: 0;
-        }
-
-        h1 {
-          font-weight: 600;
-        }
-        p {
-          font-size: 17px;
-          line-height: 2.5rem;
-          color: rgba(255, 255, 255, 0.7);
-        }
-
-        .order-status {
-          .older-list-status {
-            counter-increment: item;
-            margin-bottom: 0;
-            padding-bottom: 20px;
-
-            .active {
-              color: $white;
-            }
-
-            .active::before {
-              background-color: $white;
-              color: $purple;
-            }
-
-            p {
-              margin-bottom: 0;
-            }
-            p::before {
-              margin-right: 10px;
-              content: counter(item);
-              border: 2px solid #ffffff;
-              border-radius: 100%;
-              color: white;
-              width: 45px;
-              text-align: center;
-              display: inline-block;
-            }
-
-            .line {
-              height: 20px;
-              border-left: 2px solid #ffffff;
-              z-index: 1;
-              position: absolute;
-              margin: 0 1.4rem;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  /*-----Form sign up or sing in---*/
-
-  .form-sign {
-    margin: auto;
-    max-width: 100%;
-
-    .logo-mobile {
-      @include tablet() {
-        display: none;
-      }
-    }
-
-    h2 {
-      font-weight: 700;
-    }
-
-    .sign-p {
-      color: $gray-600;
-      font-size: 18px;
-
-      @include phone() {
-        display: none;
-      }
-    }
-
-    form {
-      .form-control {
-        font-size: 16px;
-        color: $gray-600;
-        border-radius: 16px;
-        padding: 30px;
-      }
-
-      .form-label {
-        font-size: 16px;
-      }
-
-      input[type="checkbox"] {
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-      }
-
-      .pass_show {
-        font-size: 20px;
-        color: $gray-600;
-        float: right;
-        margin-right: 13px;
-        margin-top: -40px;
-        position: relative;
-        z-index: 2;
-      }
-    }
-
-    .btn-login {
-      padding: 15px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-      color: $gray-600;
-      border-radius: 16px;
-      margin-left: 25px;
-      margin-bottom: 10px;
-      width: 150px;
-
-      img {
-        height: 20px;
-      }
-
-      &:hover {
-        background-color: $gray-200;
-      }
-
-      @include desktop() {
-      }
-
-      @include phone() {
-        width: 50px;
-        margin-left: 10px;
-        span {
-          display: none;
-        }
-      }
-    }
-  }
-}
-
-/* ===== Sign end =========*/
-
-/* ====== Landing Page ========*/
-
-header {
-  .navbar {
-    padding: 10px 0 10px;
-
-    .navbar-brand {
-      img {
-        height: 25px;
-      }
-    }
-    .navbar-toggler {
-      border: none;
-      color: $black;
-      padding: 1rem 0 1rem;
-      font-size: 2rem;
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    .nav-link {
-      font-size: 16px;
-    }
-
-    .btn-sign-up {
-      width: 7rem;
-    }
-  }
-  .user-profile {
-    img {
-      height: 50px;
-      border-radius: 100%;
-    }
-  }
-
-  .mobile-nav {
-    .search {
-      padding-bottom: 0px;
-      input {
-        width: 90%;
-        margin: auto;
-        font-size: 16px;
-        padding-left: 50px;
-      }
-
-      .mobile-search-icon {
-        font-size: 20px;
-        color: $gray-600;
-        margin-left: 40px;
-        margin-top: -30px;
-        margin-bottom: 50px;
-        position: relative;
-        z-index: 22;
-      }
-    }
-
-    .hr {
-      border-top: 0.5px solid $gray-200;
-      width: 100%;
-    }
-
-    a {
-      color: $black;
-      text-decoration: none;
-    }
-
-    .location-dropdown {
-      .show {
-        text-align: center;
-        padding: 0;
-        border: none;
-      }
-    }
-
-    .copyrigth {
-      color: $gray-600;
-    }
-
-    .back-cover {
-      height: 100vh;
-      width: 100vh;
-      position: fixed;
-      background-color: rgba(0, 0, 0, 0.24);
-      z-index: -2;
-    }
-
-    @media (min-width: 805px) {
-      display: none;
-    }
-  }
-}
-.navbar-fixed {
-  height: 90px;
-  display: block;
-}
-
-/* ==== Hero ====*/
-
-.hero {
-  font-size: 20px;
-  height: 100vh;
-
-  .content {
-    .content-text-image {
-      h1 {
-        font-size: 16px;
-        color: $gray-600;
-        padding: 0;
-        span {
-          color: $purple;
-          font-weight: 700;
-
-          @include tablet() {
-            font-size: 2.5rem;
-          }
-        }
-      }
-    }
-
-    .content-hero-image {
-      height: 460px;
-      width: 371px;
-
-      .img-hero {
-        height: 80%;
-        padding: 0;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 6px;
-          bottom: 0;
-          right: 5px;
-          z-index: 1;
-          border-radius: 15px;
-          background: rgba(0, 0, 0, 0.3);
-        }
-
-        img {
-          height: 100%;
-          width: 90%;
-          object-fit: cover;
-          border-radius: 15px;
-          box-shadow: 5px 10px 13px rgba(0, 0, 0, 0.3);
-        }
-      }
-
-      @include phone() {
-        height: 350px;
-        width: 282.52px;
-      }
-    }
-  }
-}
-
-/* =====Now Showing====== */
-
-.now-showing {
-  height: 450px;
+#profile {
   background-color: #f5f6f8;
 
-  .now-showing-container {
-    width: 82%;
-    margin: auto;
-  }
+  .account-setting {
+    border-radius: 15px;
+    background-color: $white;
+    padding: 0 45px;
 
-  .text-now-showing {
-    color: $purple;
-    padding-top: 36px;
-
-    h4 {
-      font-weight: 600;
-      width: 15rem;
-
-      @include tablet() {
-        &::after {
-          content: "";
-          width: 45%;
-
-          display: block;
-          margin-left: 28px;
-          padding-top: 10px;
-          border-bottom: 3px solid $purple;
-        }
-      }
-    }
-  }
-  .slider {
-    margin-right: -5%;
-    margin-top: 20px;
-
-    @include desktop() {
-      margin-right: -20%;
-    }
-  }
-
-  .film-now-showing {
-    border-radius: 8px;
-    margin: 15px;
-
-    .img-movie {
-      padding: 15px;
-      border: 3px solid white;
-      height: 280px;
-      width: 195px;
-      object-fit: cover;
-      border-radius: 8px;
-
-      img {
-        border-radius: 8px;
-        height: 240px;
-        width: 160px;
-        object-fit: cover;
-      }
-    }
-
-    p {
+    .setting {
+      color: black;
+      text-decoration: none;
+      padding: 20px 15px;
       color: $gray-600;
-      font-size: 12px;
     }
 
-    &-detail {
-      display: none;
-      width: 195px;
-      margin: -280px auto 0;
-      padding: 280px 15px 15px;
-      border-radius: 8px;
-      background-color: $white;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.17);
-      transition: all 0.5s ease;
+    .active {
+      border-bottom: 2px solid $purple;
+      color: $black;
     }
 
     &:hover {
-      transition: 0.2s ease 0s;
+      a {
+        text-decoration: none;
+      }
+    }
 
+    @include phone() {
+      display: none;
+    }
+  }
+  .profile-section-mobile {
+    display: none;
+    background-color: $white;
+
+    .setting {
+      color: black;
+      text-decoration: none;
+      padding: 15px 15px;
+      color: $gray-600;
+    }
+
+    .active {
+      border-bottom: 2px solid $purple;
+      color: $black;
+    }
+
+    &:hover {
+      a {
+        text-decoration: none;
+      }
+    }
+
+    @include phone() {
+      display: block;
+    }
+  }
+  .profile-content {
+    border-radius: 15px;
+    background-color: $white;
+    padding: 40px;
+    .info {
+      p {
+        font-size: 27px;
+        color: $purple;
+      }
+    }
+    .photo-profile {
       img {
-        z-index: 2;
+        border-radius: 100%;
+        height: 150px;
+      }
+    }
+    .card-point {
+      width: 100%;
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+
+      .content-card {
+        z-index: 4;
+        position: relative;
+        color: $white;
+        height: 80px;
+        padding: 10px;
+        font-weight: 700;
+        span {
+          font-size: 12px;
+        }
+        img {
+          height: 35px;
+        }
+      }
+      .circle {
+        height: 80px;
+        width: 100%;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          width: 80px;
+          height: 80px;
+          z-index: 3;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 100%;
+          margin-top: -30px;
+          margin-right: -10px;
+        }
+        &::after {
+          content: "";
+          width: 90px;
+          height: 90px;
+          z-index: 3;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 100%;
+          margin-top: -20px;
+          margin-right: -30px;
+        }
       }
 
-      .film-now-showing-detail {
-        transition-delay: 2s;
-        display: block;
+      .bg-1 {
+        top: 0;
         z-index: 1;
+        width: 100%;
+        height: 95px;
+        position: absolute;
+        border-radius: 10px;
+        background-image: linear-gradient(
+          75deg,
+          #5f2eea 31.28%,
+          #7647f9 62.16%
+        );
+      }
+      .bg-2 {
+        top: 0;
+        width: 90%;
+        height: 100px;
+        margin-left: 5%;
+        position: absolute;
+        border-radius: 10px;
+        background-color: rgba(95, 46, 234, 0.4);
       }
     }
   }
-}
-/*=======Now Showing=======*/
-/*======== Upc oming =======*/
-.upcoming {
-  &-text {
-    padding: 45px 0 36px;
-
-    h4 {
-      font-weight: 600;
+  .details-information {
+    border-radius: 15px;
+    background-color: $white;
+    padding: 40px;
+    form {
+      width: 100%;
     }
   }
-
-  &-button {
-    .upcoming-button-month {
-      width: 120px;
-      margin: 15px 15px 15px;
-    }
-  }
-
-  .upcoming-button::-webkit-scrollbar-thumb {
-    background-color: $gray-300;
-  }
-
-  &-movie {
-    width: 195px;
-    margin: 15px;
-    padding: 15px;
-    border: 1px solid $gray-400;
-    border-radius: 8px;
+  .order-history-ticket {
+    border-radius: 15px;
+    background-color: $white;
+    padding: 40px;
 
     p {
-      color: $gray-600;
-      font-size: 12px;
+      margin-bottom: 2px;
     }
-  }
 
-  .slider {
-    margin-right: -10%;
-  }
-  .slider::-webkit-scrollbar-thumb {
-    background-color: $gray-300;
-  }
-}
-
-/*====== End Up-coming ======*/
-/*====== Join-email ======*/
-
-.join-email {
-  margin-top: 70px;
-  margin-bottom: 70px;
-  box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.17);
-  border-radius: 15px;
-  h2 {
-    span {
-      color: $purple;
+    img {
+      height: 50px;
     }
-  }
-  form {
+
+    a {
+      color: $black;
+
+      @include phone() {
+        display: none;
+      }
+    }
+
     .btn {
+      width: 35%;
+
       @include phone() {
         width: 100%;
-        display: block;
       }
     }
   }
-  p {
-    color: $gray-600;
-  }
-}
-
-/*====== End Join Email======*/
-/*====== Footer ======*/
-#footer {
-  margin-top: 100px;
-  .footer {
-    margin-top: 70px;
-    &-tickitz {
-      img {
-        height: 45px;
-        margin-bottom: 20px;
-      }
-      p {
-        color: $gray-700;
-      }
-    }
-
-    &-explore {
-      h5 {
-        padding-bottom: 10px;
-      }
-      a {
-        color: $gray-700;
-        margin-right: 15px;
-      }
-    }
-
-    &-sponsor {
-      img {
-        height: 45px;
-        width: auto;
-      }
-    }
-
-    &-social {
-      a {
-        font-size: 25px;
-        margin-right: 20px;
-        color: $gray-700;
-
-        @include tablet() {
-          font-size: 16px;
-          margin-right: 10px;
-        }
-
-        .social-name {
-          margin-left: 20px;
-          display: none;
-
-          @include desktop() {
-            display: inherit;
-          }
-        }
-      }
-    }
-  }
-  .licence {
-    color: $gray-700;
-  }
-}
-
-/*====== End-Footer ======*/
-
-/*====== Detail movie page ======*/
-
-#detail-movie {
-  img {
-    border-radius: 8px;
-    border: 1px solid $gray-400;
-    padding: 20px;
-  }
-
-  h1 {
-    font-weight: 700;
-  }
-}
-
-#showticket {
-  .btn-showticket {
-    background-color: $gray-400;
-    border: none;
-    padding: 15px;
-    span {
-      padding-right: 150px;
-    }
-  }
-
-  .movie-schedule {
-    &-card {
-      border: 0.5px solid $gray-400;
-      padding: 15px;
-      border-radius: 10px;
-      width: 330px;
-      margin: 20px;
-
-      img {
-        height: 40px;
-      }
-      h5,
-      h6 {
-        font-weight: 600;
-      }
-
-      .time-available {
-        .time {
-          padding: 7px;
-
-          .now-play {
-            color: $purple;
-          }
-
-          .disabled {
-            color: $gray-600;
-            cursor: not-allowed;
-            text-decoration: none;
-          }
-
-          .availble {
-            color: #14142b;
-          }
-        }
-      }
-
-      &:hover {
-        box-shadow: 0px 8px 24px rgba(17, 17, 17, 0.08);
-      }
-    }
-  }
-
-  .view-more {
-    a {
-      width: 60%;
-      margin: 0.7em auto;
-      overflow: hidden;
-      text-align: center;
-      font-weight: 300;
-    }
-    a::before,
-    a::after {
-      content: "";
-      display: inline-block;
-      width: 50%;
-      margin: 0 0.5em 0 -55%;
-      vertical-align: middle;
-      border-bottom: 1px solid $gray-600;
-    }
-    a:after {
-      margin: 0 -55% 0 0.5em;
+  .mobile-none {
+    @include phone() {
+      display: none;
     }
   }
 }

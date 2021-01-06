@@ -96,7 +96,7 @@
                 color="gray"
               ></span>
             </a>
-            <a class="user-profile" href="./signup.html" role="button">
+            <a class="user-profile" href="./profile.html" role="button">
               <img src="./assets/img/user.jpeg" alt="user profile" />
             </a>
           </div>
@@ -170,259 +170,106 @@
       <div class=""></div>
     </div>
     <!--End Header-->
-    <!--Detail Movie-->
-    <section id="detail-movie">
-      <div class="container mt-5">
+    <!--orderpage-->
+    <section id="result-ticket">
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md-4 col-lg-3 text-center">
-            <img src="./assets/img/spider-movie.png" alt="" class="img-fluid" />
-          </div>
-          <div class="col-12 col-md-8 col-lg-9">
-            <div class="row">
-              <div class="col-12 text-center text-md-left my-4 mt-md-0">
-                <h1 class="h4">Spider-Man: Homecoming</h1>
-                <p>Adventure, Action, Sci-Fi</p>
+          <div class="col-12 my-3 my-md-5">
+            <div class="ticket-show">
+              <h5 class="text-center mb-5">Proof of Payment</h5>
+              <div class="ticket">
+                <div class="row heading-ticket">
+                  <div
+                    class="col-7 heading-admit-one d-flex align-items-center"
+                  >
+                    <img src="./assets/img/tickitz.png" alt="" />
+                    <h6>Admint One</h6>
+                  </div>
+                  <div class="col-5 heading-barcode text-center">
+                    <img src="./assets/img/tickitz.png" alt="" />
+                  </div>
+                </div>
+                <div class="row ticket-info">
+                  <div
+                    class="col-12 col-md-7 ticket-info-text order-1 order-md-0"
+                  >
+                    <div class="row">
+                      <div class="col-6 col-md-12 mb-2 order-0 title">
+                        <p>title</p>
+                        <h6>Spider-Man: Homecoming</h6>
+                      </div>
+                      <div class="col-6 col-md-4 mb-2 order-2 order-md-1">
+                        <p>Date</p>
+                        <h6>07 July</h6>
+                      </div>
+                      <div class="col-6 col-md-4 mb-2 order-3 order-md-2">
+                        <p>Time</p>
+                        <h6>02:00pm</h6>
+                      </div>
+                      <div class="col-6 col-md-4 mb-2 order-1 order-md-3">
+                        <p>Category</p>
+                        <h6>PG-13</h6>
+                      </div>
+                      <div class="col-6 col-md-4 mb-2 order-4 order-md-4">
+                        <p>Count</p>
+                        <h6>3 pieces</h6>
+                      </div>
+                      <div class="col-6 col-md-4 mb-2 order-5 order-md-5">
+                        <p>Seats</p>
+                        <h6>C4, C5, C6</h6>
+                      </div>
+                      <div
+                        class="col-12 col-md-4 mb-2 order-6 order-md-6 price"
+                      >
+                        <p id="price-tag">Price</p>
+                        <p id="total-tag">Total</p>
+                        <h6>$30.00</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-md-4 ticket-info-barcode order-0 order-md-1"
+                  >
+                    <div class="row text-center">
+                      <div class="col my-4">
+                        <img
+                          src="./assets/img/barcode.png"
+                          alt=""
+                          class="img-fluid"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6">
-                <p>Release Date</p>
-                <h6>June 28, 2017</h6>
-              </div>
-              <div class="col-6">
-                <p>Directed by</p>
-                <h6>Jon Watss</h6>
-              </div>
-              <div class="col-6 my-4">
-                <p>Duration</p>
-                <h6>2 hours 13 minutes</h6>
-              </div>
-              <div class="col-6 my-4">
-                <p>Casts</p>
-                <h6>Tom Holland, Michael Keaton, Robert Downey Jr., ...</h6>
-              </div>
-              <div class="col-12">
-                <p>Synopsis</p>
-                <h6>
-                  Thrilled by his experience with the Avengers, Peter returns
-                  home, where he lives with his Aunt May, under the watchful eye
-                  of his new mentor Tony Stark, Peter tries to fall back into
-                  his normal daily routine - distracted by thoughts of proving
-                  himself to be more than just your friendly neighborhood
-                  Spider-Man - but when the Vulture emerges as a new villain,
-                  everything that Peter holds most important will be threatened.
-                </h6>
+              <div class="btn-print-ticket m-4">
+                <div class="row d-flex justify-content-center">
+                  <button type="button" class="btn btn-outline-secondary m-3">
+                    <span
+                      class="iconify"
+                      data-icon="bx:bx-download"
+                      data-inline="false"
+                    ></span>
+                    Download
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary m-3 px-4"
+                  >
+                    <span
+                      class="iconify"
+                      data-icon="teenyicons:print-outline"
+                      data-inline="false"
+                    ></span>
+                    Print
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--Detail Movie End-->
-    <!--Show Time & Ticket-->
-    <section id="showticket">
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-12 my-3 text-center">
-            <h4>Showtimes and Tickets</h4>
-          </div>
-          <div class="col-12 col-md-6 text-md-right text-center mb-4">
-            <button
-              class="btn btn-secondary dropdown-toggle btn-showticket"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span
-                class="iconify"
-                data-icon="uil:calender"
-                data-inline="false"
-              ></span>
-              <span class="pl-3">27/07/20</span>
-            </button>
-          </div>
-          <div class="col-12 col-md-6 text-center text-md-left">
-            <button
-              class="btn btn-secondary dropdown-toggle btn-showticket"
-              type="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <span
-                class="iconify"
-                data-icon="entypo:location"
-                data-inline="false"
-              ></span>
-              <span class="pl-3">Location</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="movie-schedule row my-5">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="movie-schedule-card">
-                  <div
-                    class="d-flex flex-row justify-content-start align-items-center"
-                  >
-                    <div>
-                      <img src="./assets/img/ebv.id.png" alt="ebu.id" />
-                    </div>
-                    <div>
-                      <h5>ebv.id</h5>
-                      <p>Whatever street No.12, South Purwokerto</p>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex flex-row flex-wrap time-available">
-                    <div class="time">
-                      <a href="#" class="availble">08:30am</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">10:30pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="disabled">12:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="now-play">02:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">04:30pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="disabled">07:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">08:30pm</a>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between my-3">
-                    <p>Price</p>
-                    <h6>$10.00/seat</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between my-3">
-                    <a class="btn btn-primary" href="#" role="button"
-                      >Book now</a
-                    >
-                    <a class="btn btn-outline-primary" href="#" role="button"
-                      >Add to cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="movie-schedule-card">
-                  <div
-                    class="d-flex flex-row justify-content-start align-items-center"
-                  >
-                    <div>
-                      <img src="./assets/img/CineOne21.png" alt="ebu.id" />
-                    </div>
-                    <div>
-                      <h5>CineOne21</h5>
-                      <p>Whatever street No.12, South Purwokerto</p>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex flex-row flex-wrap time-available">
-                    <div class="time">
-                      <a href="#" class="availble">08:30am</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">10:30pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="disabled">12:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="now-play">02:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">04:30pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="disabled">07:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">08:30pm</a>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between my-3">
-                    <p>Price</p>
-                    <h6>$10.00/seat</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between my-3">
-                    <a
-                      class="btn btn-primary"
-                      href="./order-page.html"
-                      role="button"
-                      >Book now</a
-                    >
-                    <a class="btn btn-outline-primary" href="#" role="button"
-                      >Add to cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="movie-schedule-card">
-                  <div
-                    class="d-flex flex-row justify-content-start align-items-center"
-                  >
-                    <div>
-                      <img src="./assets/img/hiflix.png" alt="ebu.id" />
-                    </div>
-                    <div>
-                      <h5>hiflix</h5>
-                      <p>Whatever street No.12, South Purwokerto</p>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex flex-row flex-wrap time-available">
-                    <div class="time">
-                      <a href="#" class="availble">08:30am</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">10:30pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="disabled">12:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="now-play">02:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">04:30pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="disabled">07:00pm</a>
-                    </div>
-                    <div class="time">
-                      <a href="#" class="availble">08:30pm</a>
-                    </div>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between my-3">
-                    <p>Price</p>
-                    <h6>$10.00/seat</h6>
-                  </div>
-                  <div class="col-12 d-flex justify-content-between my-3">
-                    <a class="btn btn-primary" href="#" role="button"
-                      >Book now</a
-                    >
-                    <a class="btn btn-outline-primary" href="#" role="button"
-                      >Add to cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="div text-center view-more">
-          <a href="#">View More</a>
-        </div>
-      </div>
-    </section>
-
     <!--Footer-->
     <footer id="footer">
       <div class="container footer">

@@ -1,0 +1,84 @@
+#detail-movie {
+  img {
+    border-radius: 8px;
+    border: 1px solid $gray-400;
+    padding: 20px;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+}
+
+#showticket {
+  .btn-showticket {
+    background-color: $gray-400;
+    border: none;
+    padding: 15px;
+    span {
+      padding-right: 150px;
+    }
+  }
+
+  .movie-schedule {
+    &-card {
+      border: 0.5px solid $gray-400;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      img {
+        height: 40px;
+      }
+      h5,
+      h6 {
+        font-weight: 600;
+      }
+
+      .time-available {
+        .time {
+          padding: 7px;
+
+          .now-play {
+            color: $purple;
+          }
+
+          .disabled {
+            color: $gray-600;
+            cursor: not-allowed;
+            text-decoration: none;
+          }
+
+          .availble {
+            color: #14142b;
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: 0px 8px 24px rgba(17, 17, 17, 0.08);
+      }
+    }
+  }
+
+  .view-more {
+    a {
+      width: 60%;
+      margin: 0.7em auto;
+      overflow: hidden;
+      text-align: center;
+      font-weight: 300;
+    }
+    a::before,
+    a::after {
+      content: "";
+      display: inline-block;
+      width: 50%;
+      margin: 0 0.5em 0 -55%;
+      vertical-align: middle;
+      border-bottom: 1px solid $gray-600;
+    }
+    a:after {
+      margin: 0 -55% 0 0.5em;
+    }
+  }
+}
