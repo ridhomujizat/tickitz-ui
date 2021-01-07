@@ -234,3 +234,9 @@
     }
   }
 }
+
+.mobile-orderpage {
+  @include phone() {
+    display: none;
+  }
+}

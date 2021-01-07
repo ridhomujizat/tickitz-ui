@@ -10688,6 +10688,12 @@ header .mobile-nav .back-cover {
   }
 }
 
+@media (max-width: 576px) {
+  .mobile-orderpage {
+    display: none;
+  }
+}
+
 #payment {
   background-color: #f5f6f8;
 }
@@ -11174,6 +11180,15 @@ header .mobile-nav .back-cover {
   #profile .mobile-none {
     display: none;
   }
+}
+
+#admin {
+  background-color: #f5f6f8;
+}
+#admin .mmovie-descripton {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
